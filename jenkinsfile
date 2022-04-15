@@ -3,8 +3,8 @@ pipeline {
               stages {
                 stage('one'){
                        steps{
-                       echo "This is stage satge 1"
+                             echo "This is stage satge 1"
                        }
                 }
-            }
+         }
                        
