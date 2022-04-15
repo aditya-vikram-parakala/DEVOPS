@@ -13,8 +13,10 @@ pipeline {
             }
         }
         stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+            agent {
+                docker{
+                    image 'ubuntu'
+                }
             }
         }
     }
