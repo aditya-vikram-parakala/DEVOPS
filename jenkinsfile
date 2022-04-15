@@ -1,16 +1,10 @@
 pipeline {
-
-agent any 
-stages {
-stage('one')
-{
-agent {
-docker{
-image 'ubuntu'
-} 
-}
-}
-
-}
-
-}
+         agent any 
+              stages {
+                stage('one'){
+                       steps{
+                       echo "This is stage satge 1"
+                       }
+                }
+            }
+                       
